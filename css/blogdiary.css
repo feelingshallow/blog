@@ -1,0 +1,363 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,select,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+body{
+    font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #E9EAED;
+    line-height: 1.5;
+    overflow-x: hidden
+}
+a{
+    text-decoration: none;
+
+    color: #fff;
+
+}
+/*头部的设计*/
+.nav a:hover{
+    color:#00c1de ;
+}
+h1{
+    display: inline-block;/*有空格会有间隙，使用浮动*/
+}
+
+/*头部的设计*/
+.header{
+    height: 60px;
+    width: 100%;
+    background: black;
+
+}
+.headerBox{
+    height: 100%;
+    width: 1200px;
+
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 60px;
+}
+.nav li{
+    float: left;
+    margin-right:  35px;
+}
+.headerBox h1{
+    height: 100%;
+
+    float: left;
+    font-size: 26px;
+    font-weight: normal;
+    margin-right: 75px;
+}
+.search{
+    width: 50px;
+    height: 100%;
+
+    margin-right: 30px;
+    float:right;
+}
+
+.nav{
+    width: 800px;
+    height: 100%;
+
+    float: left;
+}
+/*开始主体的设计*/
+
+.zhuti{
+    width: 1200px;
+    min-height: 800px;
+    background: #00c1de;
+    margin: 20px auto ;
+
+}
+.left{
+ width: 900px;
+    background: #b752dc;
+    display: block;
+    float: left;
+}
+.personal{
+    width: 860px;
+    height: 100px;
+    float: left;
+    display: block;
+    background: #fff;
+    margin: 0 0 20px;
+    padding: 20px;
+}
+.personal img{
+    width: 131px;
+    height: 100px;
+    display: block;
+    float: left;
+
+}
+.personal h1{
+display: block;
+    float: left;
+}
+.personal p{
+    display: block;
+    float: left;
+    height: 47px;
+    width: 700px;
+    line-height: 1.5;
+}
+.three{
+    width: 880px;
+    margin-top: 20px;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 2px;
+    background: #fff;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+/*630 55*/
+.thead{
+    height:40px;
+    width: 100%;
+    border-bottom:1px solid #e4e3e3 ;
+    line-height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+}
+.thead::before{
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    content: "";
+    display: block;
+    bottom: -1px;
+    transition: all 0.5s ease;
+}
+.thead:hover:before{
+    width: 80px;
+}
+
+
+.list li{
+    width: 860px;
+    height: 197px;
+    /*background: #b752dc;*/
+    border-bottom: #eee 1px dashed;
+}
+
+.blogtitle{
+    width: 100%;
+    float: left;
+}
+.list a:hover{
+    color: #b752dc;
+}
+.blogtext{
+    display: block;
+    width: 600px;
+    height: 61px;
+    float: left;
+    margin: 15px;
+}
+.blogimg{
+    width: 199px;
+    height: 124px;
+    background: black;
+    display: block;
+    float: left;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.blogimg:hover img{
+    transform: scale(1.1,1.1);
+
+}
+.blogimg p{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    background: rgba(18,182,221,.8);
+    color: white;
+
+}
+.list a{
+    font-size: 18px;
+    color: #000;
+}
+
+.blogbottom{
+    width: 600px;
+    height: 40px;
+    margin: 10px;
+    /*background: #ba96ff;*/
+    float: left;
+}
+.blogbottom img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    float: left;
+}
+.bottomtext{
+    float: left;
+}
+.blogbottom > a:nth-child(2) {
+    float: right;
+    width: 80px;
+    height: 28px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: #12b7de;
+}
+/*右侧设计*/
+.right{
+    width: 284px;
+    display: block;
+    float: right;
+    background: #9a9a9a;
+}
+.dright{
+    width:244px;
+    padding: 0 20px;
+    float: right;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.dright h1{
+    height: 40px;
+    font-size: 16px;
+    font-weight:normal;
+    line-height: 41px;
+    display:block;
+    border-bottom: 1px solid #e4e3e3;
+    position: relative;
+}
+.dright h1:before{
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    content: "";
+    display: block;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+h1:hover:before{
+    width: 80px;
+}
+.rightpicture{
+    width: 200px;
+    height: 100px;
+    display: block;
+    float: right;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+.rightp{
+    position: absolute;
+    width: 150px;
+    top: 31px;
+    left:30px;
+    display: block;
+    text-align: center;
+
+}
+
+.rightcontext{
+    display: block;
+    color: #000;
+    width: 100%;
+}
+.dright ul{
+    padding-top: 16px;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+.dright .rightfrist li{
+    height: 38px;
+    margin: 12px ;
+    font-size: 15px;
+    background: #f6f6f6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 38px;
+    position: relative;
+    display: block;
+    padding: 0px 20px;
+}
+.dright li a{
+    color: #333333;
+    font-size: 12px;
+
+}
+.dright .rightfrist li::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    left: 15px;
+    top: 20px
+}
+.rightcontext li{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #f6f6f6;
+    position: relative;
+}
+
+.rightcontext i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #ff6600;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+    font-style: normal;
+}
+.rightcontext i::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 9px;
+    color: #fff;
+    line-height: 16px;
+    width: 16px;
+    text-align: center;
+}
+
+.rightcontext li:first-child i::before{
+    content: "1";
+}
+.rightcontext li:nth-child(2) i::before{
+    content: "2";
+}
+.rightcontext li:nth-child(3) i::before{
+    content: "3";
+}
