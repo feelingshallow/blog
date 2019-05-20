@@ -35,6 +35,14 @@ h1{
     background: black;
 
 }
+.header::before {
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .headerBox{
     height: 100%;
     width: 1200px;
@@ -63,11 +71,12 @@ h1{
     margin-right: 75px;
 }
 .search{
-    width: 50px;
-    height: 100%;
-
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
     margin-right: 30px;
     float:right;
+
 }
 
 .nav{
@@ -855,6 +864,9 @@ h2{
     font-size: 18px;
     color: #ffffff;
     background: #12b7de;
+    border-radius: 6px;
+    text-align: center;
+
 }
 
 .rightbig{
