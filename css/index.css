@@ -57,7 +57,7 @@ h1{
 }
 .banner{
     height: 280px;
-    width: 1200px;
+    width: 1240px;
     background: #e9eaed;
     margin: 20px auto;
 }
@@ -772,9 +772,9 @@ h2{
     -webkit-line-clamp:3
 }
 
-.content a{
+ .symbol {
     font-size: 15px;
-    /*color: #096;*/
+    color: #096;
     display: block;
     margin-top: 10px;
 
@@ -868,7 +868,7 @@ h2{
     text-align: center;
 
 }
-
+/**/
 .rightbig{
     display: block;
     float: right;

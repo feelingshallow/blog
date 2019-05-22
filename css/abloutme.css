@@ -76,12 +76,11 @@ h1{
 .article{
     width: 1200px;
     margin:20px auto ;
-    background: #fff;
     border-radius: 5px;
     padding: 20px 40px;
     box-sizing: border-box;
     height: 350px;
-
+    background: url("meng2.jpg")no-repeat right top #fff;
 }
 .article .jieshao{
     display: flex;
