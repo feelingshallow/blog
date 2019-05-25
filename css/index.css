@@ -683,14 +683,13 @@ background: #ff6600;
     overflow: hidden;
 }
 .three{
-    width: 920px;
+    width: 900px;
 margin-top: 20px;
   overflow: hidden;
      float: left;
-    padding-bottom: 2px;
+   padding: 20px;
     background: #fff;
     margin-bottom: 20px;
-padding-left: 20px;
     border-radius: 5px;
 }
 /*630 55*/
