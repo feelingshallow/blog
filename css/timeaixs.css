@@ -133,6 +133,9 @@ h1{
     left: -26px;
     border-radius: 50%;
 }
+.list i:hover:before{
+    background: #333;
+}
 .list a{
     color: #333;
 }
