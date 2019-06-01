@@ -1,0 +1,119 @@
+@import "base.css";
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,select,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+body{
+    background: #e9eaed;
+
+}
+a{
+    text-decoration: none;
+
+    color: #fff;
+
+}
+.nav a:hover{
+    color:#00c1de ;
+}
+h1{
+    display: inline-block;/*有空格会有间隙，使用浮动*/
+}
+
+/*头部的设计*/
+.header{
+    height: 60px;
+    width: 100%;
+    background: black;
+
+}
+.header::before {
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.headerBox{
+    height: 100%;
+    width: 1200px;
+
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 60px;
+}
+.nav li{
+    float: left;
+    margin-right:  35px;
+}
+.banner{
+    height: 280px;
+    width: 1240px;
+    background: #e9eaed;
+    margin: 20px auto;
+}
+
+.headerBox h1{
+    height: 100%;
+
+    float: left;
+    font-size: 26px;
+    font-weight: normal;
+    margin-right: 75px;
+}
+.search{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 30px;
+    float:right;
+
+}
+
+.nav{
+    width: 800px;
+    height: 100%;
+
+    float: left;
+}
+/*主体设计*/
+.zhuti{
+    width: 1200px;
+    min-height: 800px;
+    background: #9a9a9a;
+    margin: 30px auto;
+    padding: 20px;
+
+}
+.zhuti h1{
+    border-bottom: #37e06f 1px solid;
+    display: block;
+    font-size: 16px;
+
+}
+.zhuti p{
+    padding: 5px;
+}
+
+.touxiang {
+    display: flex;
+}
+
+.touxiang li {
+    padding: 10px;
+
+}
+.touxiang li img{
+    width: 50px;
+    height: 50px;
+}
+.zhuti
