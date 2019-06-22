@@ -15,7 +15,6 @@ window.onload=function () {
              tablist.forEach(function (elem,index) {
                  elem.onmouseenter=function () {
                   for (let i=0;i<tablist.length;i++) {
-                      console.log(tablist[i]);
                       tablist[i].classList.remove('hot')
                   }
                    this.classList.add('hot')
@@ -67,19 +66,19 @@ window.onload=function () {
         if (!flag1){
             return;
         }
-        flag1=false
-        next--
+        flag1=false;
+        next--;
         if (next<0){
             next=img.length-1
         }
-        img[next].style.left=-w+'px'
-        animate(img[current],{left:w})
-        btnli[current].classList.remove('cold')
-        btnli[next].classList.add('cold')
+        img[next].style.left=-w+'px';
+        animate(img[current],{left:w});
+        btnli[current].classList.remove('cold');
+        btnli[next].classList.add('cold');
         animate(img[next],{left:0},function () {
-            flag1=true
+            flag1=true;
             return flag1;
-        })
+        });
         current=next
 
     }
@@ -102,10 +101,7 @@ window.onload=function () {
     // }
     //
     // left.onclick=function () {
-    //     index--;
-    //     if (index<0){
-    //         index=img.length-1;
-    //     }
+    //
     //     img.forEach(function (ele) {
     //         ele.style.zIndex='2'
     //     })
@@ -175,6 +171,27 @@ window.onload=function () {
             current=next
         }
 
-
     }
+    let viewH=window.innerHeight;
+    let imgs=document.querySelectorAll('.delay')
+    let positionArr=[]
+    imgs.forEach(function (ele) {
+        let parent=ele.offsetParent;
+        positionArr.push(parent.offsetTop+ele.offsetTop)
+    });
+
+    window.onscroll=function () {
+
+        let scrolltop=document.documentElement.scrollTop
+        console.log(scrolltop);
+        for (let i=0;i<positionArr.length;i++){
+            if (scrolltop+viewH>=positionArr[i]+100){
+
+                      imgs[i].src=imgs[i].getAttribute('aa')
+
+         }
+    }
+
+     }
+
 }
